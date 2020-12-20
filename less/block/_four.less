@@ -1,0 +1,92 @@
+.four{
+    background-image: url('../img/sect4/section4.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: #fff;
+    z-index: 1;
+    &::after{
+        content:'';
+        position: absolute;
+        top:0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: -webkit-linear-gradient(45deg, rgba(211, 129, 204, 0.7) , rgba(168, 97, 227, .7));
+        background: -moz-linear-gradient(45deg, rgba(207, 137, 201, 0.7) , rgba(168, 97, 227, .7));
+        background: linear-gradient(45deg, rgba(209, 139, 203, 0.7) , rgba(168, 97, 227, .7));
+        z-index: -1;
+        
+    }
+}
+
+.four_img-wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 100px;
+}
+.four_img{
+    max-width: 340px;
+    width: 100%;
+    img{
+        width: 100%;
+        height: 100%;
+        margin-bottom: 30px;
+    }
+}
+.four_img-text{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform:uppercase;
+}
+.four_article{
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.four_paragraph{
+    margin-bottom: 30px;
+    &:last-child{
+        margin-bottom: 0;
+    }
+}
+.four_accordion {
+    background-color: #fff;
+    color: #4e0eaa;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 30px;
+    transition: 0.4s;
+    border-radius: 10px;
+
+}
+
+.active_accordion, .four_accordion:hover {
+    background-color: rgb(240, 239, 239); 
+
+}
+
+.four_panel {
+    padding: 40px 18px;
+    display: none;
+    background: rgb(168, 97, 227);
+    overflow: hidden;
+    position: relative;
+    top: -10px;
+    border-radius: 0 0 10px 10px;
+    font-size: 25px;
+    font-weight: 400;
+    p{
+        margin-bottom: 25px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+}

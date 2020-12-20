@@ -1,0 +1,63 @@
+.six{
+    background-image: url('../img/sect6/sect6bi.jpg');
+    position: relative;
+    color: #fff;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1;
+    &::after{
+        content:'';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: -webkit-linear-gradient(45deg, rgba(211, 129, 204, 0.7) , rgba(168, 97, 227, .7));
+        background: -moz-linear-gradient(45deg, rgba(207, 137, 201, 0.7) , rgba(168, 97, 227, .7));
+        background: linear-gradient(45deg, rgba(209, 139, 203, 0.7) , rgb(168, 97, 227, .7));
+        z-index: -1;
+    }
+}
+.owl-carousel{
+    padding: 0 30px;
+    max-width: 800px;
+    height: 100%;
+    margin: 0 auto;
+    color: white;
+    text-align: left;
+    
+}
+.owl-carousel__text{
+    height: 100%;
+    margin-bottom: 10px;
+}
+.reviews-carousel.owl-carousel .owl-nav button.owl-prev,
+.reviews-carousel.owl-carousel .owl-nav .owl-next{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 32px;
+    height: 32px;
+    margin-right: 5px;
+    border-radius: 50%;
+    border: 3px solid #ffffff;
+    &:focus{
+        outline: none;
+    }
+    @media (min-width: 768px){
+        top: 20%;     
+    }
+}
+.reviews-carousel.owl-carousel .owl-nav button.owl-prev{
+    left: -7px;
+    @media (min-width: 768px){
+        left: -17px;    
+    }
+}
+.reviews-carousel.owl-carousel .owl-nav .owl-next{
+    right: -7px;
+    @media (min-width: 768px){
+        right: -20px;    
+    }
+}
