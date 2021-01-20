@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <title>Чистка</title>
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/main.333.css">
     <link rel="stylesheet" href="./css/owl.carousel.min.css">
 </head>
 <body>
@@ -309,12 +309,31 @@
     </section>
     <section class="seven">
         <div class="container">
-            <p class="seven_text">Остались вопросы заполните форму и мы свяжемся с вами</p>
-            <form action="" class="form">
-                <input type="text" class="input-name" placeholder="Имя">
-                <input type="text" class="input-email" placeholder="Email">
-                <button class="btn-form">Отправить</button>
-            </form>
+            <legend class="seven_text">Остались вопросы заполните форму и мы свяжемся с вами</legend>
+            <div class="container">
+                <div class="form__wrap">
+                    <form action="mail.php" method="POST">
+                        
+        
+                        <div class="form-group">
+                            <label for="">Введите ваше имя</label>
+                            <input type="text" class="form-control" id="" name="user_name" placeholder="Например, Иван">
+                        </div>
+                    
+                        <div class="form-group">
+                            <label for="">Введите номер телефона</label>
+                            <input type="text" class="form-control" id="" name="user_phone" placeholder="+7 (999) 99 99 999">
+                        </div>
+                    
+                        <div class="form-group">
+                            <label for="">Введите email</label>
+                            <input type="text" class="form-control" id="" name="user_email" placeholder="mail@mail.ru">
+                        </div>
+                        <div class="wrap__btn">
+                            <button type="submit" class="btn btn-primary">Отправить форму</button>
+                        </div>
+                        </form>
+                </div>
         </div>
         
     </section>

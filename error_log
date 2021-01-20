@@ -1,0 +1,2 @@
+[22-Dec-2020 23:07:03 Europe/Moscow] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/m72156/public_html/centerneo.ru/222/phpmailer/PHPMailerAutoload.php on line 45
+[22-Dec-2020 23:11:55 Europe/Moscow] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/m72156/public_html/centerneo.ru/222/phpmailer/PHPMailerAutoload.php on line 45
